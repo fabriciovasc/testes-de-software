@@ -29,11 +29,13 @@ public class DayCounter {
     }
 
     public int getNumberOfDaysBetweenTwoDates() {
-        return Days.daysBetween(this.startDate, this.endDate).getDays();
+        int numberOfDays = Days.daysBetween(this.startDate, this.endDate).getDays();
+        return numberOfDays;
     }
 
     public boolean startDateIsBeforeEndDate() {
-        return this.startDate.isBefore(this.endDate);
+        boolean isBefore = this.startDate.isBefore(this.endDate);
+        return isBefore;
     }
 
 }

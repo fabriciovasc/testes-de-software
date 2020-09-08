@@ -11,7 +11,8 @@ public class DayCounterTest extends TestCase {
         LocalDate startDate = new LocalDate("2020-08-28");
         LocalDate endDate = new LocalDate("2020-09-07");
         DayCounter dayCounter = new DayCounter(startDate, endDate);
-        assertEquals("2020-08-28 - 2020-09-07 must be 10 days", 10, dayCounter.getNumberOfDaysBetweenTwoDates());
+        int getNumberOfDays = dayCounter.getNumberOfDaysBetweenTwoDates();
+        assertEquals("2020-08-28 - 2020-09-07 must be 10 days", 10, getNumberOfDays);
     }
 
     @Test
@@ -19,7 +20,8 @@ public class DayCounterTest extends TestCase {
         LocalDate startDate = new LocalDate("2019-09-25");
         LocalDate endDate = new LocalDate("2020-09-25");
         DayCounter dayCounter = new DayCounter(startDate, endDate);
-        assertEquals("2019-09-25 - 2020-09-25 must be true", true, dayCounter.startDateIsBeforeEndDate());
+        boolean startDateIsBeforeEndDate = dayCounter.startDateIsBeforeEndDate();
+        assertEquals("2019-09-25 - 2020-09-25 must be true", true, startDateIsBeforeEndDate);
     }
 
 }
