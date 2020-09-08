@@ -1,4 +1,4 @@
-package com.entregaintroducao.menu;
+package com.entregaintroducao.control;
 
 import java.util.Scanner;
 
