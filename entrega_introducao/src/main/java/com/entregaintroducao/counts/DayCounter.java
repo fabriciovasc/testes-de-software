@@ -3,27 +3,36 @@ package com.entregaintroducao.counts;
 import org.joda.time.LocalDate;
 
 public class DayCounter {
-    public LocalDate date;
+    public LocalDate startDate;
+    public LocalDate endDate;
 
-    public DayCounter(LocalDate date) {
-        this.date = date;
+    public DayCounter(LocalDate startDate, LocalDate endDate) {
+        this.startDate = startDate;
+        this.endDate = endDate;
     }
 
-    public LocalDate getDate() {
-        return date;
+    public LocalDate getStartDate() {
+        return startDate;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public void setStartDate(LocalDate startDate) {
+        this.startDate = startDate;
     }
 
-    public int getNumberOfDaysUntilOtherDate(LocalDate otherDate) {
+    public LocalDate getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(LocalDate endDate) {
+        this.endDate = endDate;
+    }
+
+    public int getNumberOfDaysBetweenTwoDates() {
         return 4;
     }
 
-    public int getNumberOfDaysUntilChristmas(LocalDate christmasDate) {
-        return 0;
+    public boolean startDateIsBeforeEndDate() {
+        return false;
     }
-
 
 }
