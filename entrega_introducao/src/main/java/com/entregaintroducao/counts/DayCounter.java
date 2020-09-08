@@ -1,5 +1,6 @@
 package com.entregaintroducao.counts;
 
+import org.joda.time.Days;
 import org.joda.time.LocalDate;
 
 public class DayCounter {
@@ -28,11 +29,11 @@ public class DayCounter {
     }
 
     public int getNumberOfDaysBetweenTwoDates() {
-        return 4;
+        return Days.daysBetween(this.startDate, this.endDate).getDays();
     }
 
     public boolean startDateIsBeforeEndDate() {
-        return false;
+        return this.startDate.isBefore(this.endDate);
     }
 
 }
