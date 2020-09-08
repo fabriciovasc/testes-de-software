@@ -10,11 +10,14 @@ repositories {
     mavenCentral()
 }
 
+// Declarando as dependências que serão utilizadas
+/// jUnit e Joda Time
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'joda-time:joda-time:2.10.6'
 }
 
+// Definindo o caminho do diretório
 sourceSets {
     main {
         java {
@@ -23,8 +26,10 @@ sourceSets {
     }
 }
 
+// Implement console application para ter interação
 run {
     standardInput = System.in
 }
 
+// Definindo a classe main
 mainClassName = 'com.entregaintroducao.app.App'
