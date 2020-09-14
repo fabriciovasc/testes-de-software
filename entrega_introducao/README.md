@@ -7,8 +7,9 @@ build para obtenção de dependências, execução de sistemas e execução de c
 
 #### Youtube links
 
-- [Estado vermelho]()
-- [Estado verde]()
-- [Estado azul]()
+- [Demonstração das funcionalidades](https://youtu.be/ynxIaFBQeUQ?t=2)
+- [Estado vermelho](https://youtu.be/ynxIaFBQeUQ?t=59)
+- [Estado verde](https://youtu.be/ynxIaFBQeUQ?t=196)
+- [Estado azul](https://youtu.be/ynxIaFBQeUQ?t=302)
 
 
