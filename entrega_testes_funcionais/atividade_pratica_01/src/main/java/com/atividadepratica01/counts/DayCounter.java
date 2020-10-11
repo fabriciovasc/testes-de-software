@@ -14,7 +14,9 @@ public class DayCounter {
 
     // Função que retorna o número de dias entre as datas do objeto
     public int getNumberOfDaysBetweenTwoDates() {
-        return 0;
+        Days daysBetween = Days.daysBetween(this.startDate, this.endDate);
+        int numberOfDays = daysBetween.getDays();
+        return numberOfDays;
     }
 
     // Função que retorna um valor booleano verificando se a primeira data é menor que a segunda
