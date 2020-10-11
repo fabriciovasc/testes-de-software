@@ -16,6 +16,13 @@ dependencies {
     compile 'joda-time:joda-time:2.10.6'
 }
 
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
 sourceSets {
     main {
         java {
