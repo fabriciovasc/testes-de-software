@@ -1,7 +1,8 @@
 package com.atividadepratica01.counts;
 
-import org.joda.time.Days;
 import org.joda.time.LocalDate;
+import org.joda.time.Period;
+import org.joda.time.PeriodType;
 
 public class DayCounter {
     public LocalDate startDate;
@@ -14,8 +15,8 @@ public class DayCounter {
 
     // Função que retorna o número de dias entre as datas do objeto
     public int getNumberOfDaysBetweenTwoDates() {
-        Days daysBetween = Days.daysBetween(this.startDate, this.endDate);
-        int numberOfDays = daysBetween.getDays();
+        Period period = new Period(this.startDate, this.endDate, PeriodType.days());
+        int numberOfDays = period.getDays();
         return numberOfDays;
     }
 
